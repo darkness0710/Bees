@@ -93,19 +93,19 @@ public class BeeDAO implements ObjectDAO {
 		PreparedStatement preStmt = null;
 		
 		try {
-		 	conn = ConnectDB.Connect();
+		    conn = ConnectDB.Connect();
 
-		 	preStmt = conn.prepareStatement("INSERT INTO Bees(id, name, type, health, status) VALUES (?, ?, ?, ?, ?)");
-            preStmt.setInt(1, bee.getId());
-            preStmt.setString(2, bee.getName());
-            preStmt.setString(3, bee.getType());
-            preStmt.setFloat(4, bee.getHealth());
-            preStmt.setString(5, bee.getStatus());
-            preStmt.execute();
+		    preStmt = conn.prepareStatement("INSERT INTO Bees(id, name, type, health, status) VALUES (?, ?, ?, ?, ?)");
+		    preStmt.setInt(1, bee.getId());
+		    preStmt.setString(2, bee.getName());
+		    preStmt.setString(3, bee.getType());
+		    preStmt.setFloat(4, bee.getHealth());
+		    preStmt.setString(5, bee.getStatus());
+		    preStmt.execute();
             
-			return true;
+		    return true;
 		} catch (Exception e) {
-			e.printStackTrace();
+	           e.printStackTrace();
 		}
 		return false;
 	}
