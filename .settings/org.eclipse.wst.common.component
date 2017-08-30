@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="Fsoft-Final-Bee">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <property name="context-root" value="Fsoft-Final-Bee"/>
+        <property name="java-output-path" value="/Fsoft-Final-Bee/build/classes"/>
+    </wb-module>
+</project-modules>
